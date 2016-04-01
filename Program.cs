@@ -66,7 +66,7 @@ namespace keyboardstoplog
                 Console.Write("What is the number of the style?:");
                 styleNum = Convert.ToInt32(Console.ReadLine());
             }   
-        
+            string[] entry = {keyboardType,songName,stopOneName,stopOneNum,stopTwoName,stopTwoNum,stopThreeName,stopThreeNum,styleName,styleNum};//convert int to string
             Console.Write("Would you like to make another entry? (Y/N):");
             ans = Console.ReadLine();
             if (ans == "y" || ans == "Y")
