@@ -27,6 +27,9 @@ namespace keyboardstoplog
             Console.Write("What type/model of keyboard do you use?:");
             keyboardType = Console.ReadLine();
             Console.WriteLine("Thank you for that information it helps to make your log more logical and\npretty.");
+            
+            top:
+            
             Console.Write("What is the name of the song you use this set of stops with?:"); //write
             songName = Console.ReadLine();
             Console.Write("what is the name of the stop you use with " + songName + "? eg. grand piano:");
@@ -71,6 +74,7 @@ namespace keyboardstoplog
             ans = Console.ReadLine();
             if (ans == "y" || ans == "Y")
             {
+                goto top;
                 //run code from line 30
             }
             Console.WriteLine("Thank you for using the Keyboard Stop Log. \nAt this moment you can exit the program by entering exit\nMake a new entry by entering new\nOr print your log to this console window for a quick review by entering read");
